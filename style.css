@@ -1,0 +1,55 @@
+.heading{
+     font-family: "KoHo";font-size: 20px;
+    text-align: center;
+    color: black;
+    cursor: 
+}
+u:hover{
+ cursor: pointer;
+}
+.responsive {
+    margin-left: auto;
+    margin-right: auto;
+    margin align-content: center
+    
+    width:50px;
+    height: 100px;
+}
+.grid-container {
+  display: flex;
+  grid-template-columns:25% 25% 25% 25%;
+  grid-template-rows: auto;
+  background-color: cadetblue;
+  grid-template-areas: 
+    "header header header header"
+    "main main main main";
+  padding: 5px;
+  margin: auto;
+  width: 50%;
+}
+.grid-item1 {
+  grid-area: header;
+}
+.grid-item2 {
+  grid-area: main;
+}
+
+.grid-item3 {
+  grid-area: main;
+
+}
+.grid-item4 {
+  grid-area: main;
+}
+.grid-item5 {
+  grid-area: main;
+}
+.textbox {
+    margin: auto;
+    margin align-content: center;
+}
+body {
+    font-family: 'Rancho';font-size: 35px;
+    text-align: center;
+    color: darkslateblue;
+}
