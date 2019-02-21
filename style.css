@@ -1,6 +1,6 @@
 .heading{
      font-family: "KoHo";font-size: 20px;
-    text-align: center;
+    text-align: right;
     color: black;
     cursor: 
 }
@@ -16,33 +16,11 @@ u:hover{
     height: 100px;
 }
 .grid-container {
-  display: flex;
-  grid-template-columns:25% 25% 25% 25%;
-  grid-template-rows: auto;
-  background-color: cadetblue;
-  grid-template-areas: 
-    "header header header header"
-    "main main main main";
-  padding: 5px;
-  margin: auto;
-  width: 50%;
-}
-.grid-item1 {
-  grid-area: header;
-}
-.grid-item2 {
-  grid-area: main;
-}
-
-.grid-item3 {
-  grid-area: main;
-
-}
-.grid-item4 {
-  grid-area: main;
-}
-.grid-item5 {
-  grid-area: main;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1px;
+  background:"https://webgradients.com/public/webgradients_png/047%20Fly%20High.png";
+  padding: 1px;
 }
 .textbox {
     margin: auto;
@@ -52,4 +30,47 @@ body {
     font-family: 'Rancho';font-size: 35px;
     text-align: center;
     color: darkslateblue;
+}
+.grid-container2 {
+  display: grid;
+  font-family: "KoHo";font-size: 25px;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  grid-gap: none;
+  background:"https://www.xmple.com/wallpaper/pink-blue-gradient-linear-1920x1080-c2-87cefa-ffb6c1-a-15-f-14.svg";
+  padding: none;
+}
+@nextSong() heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.heartBeat {
+  -webkit-animation-name: heartBeat;
+  animation-name: heartBeat;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }

@@ -112,4 +112,3 @@ Jukebox.prototype.back = function backSong(){
 
 
 var j = new Jukebox();
-
